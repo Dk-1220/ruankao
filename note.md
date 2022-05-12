@@ -1,4 +1,4 @@
-## 1. 考试概要介绍
+1. 考试概要介绍
 
 - 考试形式
 
@@ -284,7 +284,7 @@
 
 <img src="./img/1786efb3385fd3ef1798ca29acbd360.png" alt="1786efb3385fd3ef1798ca29acbd360" style="zoom:50%;" />
 
-  注：n个进程，每个进程需要x个资源，至少需要 **n(x-1)+1** 个资源才不可能发生死锁。
+注：n个进程，每个进程需要x个资源，至少需要 **n(x-1)+1** 个资源才不可能发生死锁。
 
 - 死锁预防与避免
 
@@ -385,3 +385,183 @@
 ### 3.6 微内核操作系统
 
 <img src="./img/7d8b445b4bc4539773e24dac3b147b7.png" alt="7d8b445b4bc4539773e24dac3b147b7" style="zoom:50%;" />
+
+## 4. 数据库系统
+
+### 4.1 三级模式—两级映射
+
+<img src="/img/0984dc2f9b701f67356f0e5533d9034.png" alt="0984dc2f9b701f67356f0e5533d9034" style="zoom:50%;" />
+
+### 4.2 数据库设计过程
+
+<img src="/img/32e94963a018f7e53d298b2a51f598c.png" alt="32e94963a018f7e53d298b2a51f598c" style="zoom:50%;" />
+
+### 4.3 E-R模型
+
+- 概念
+
+<img src="/img/80ac96d905d2495886e6daffac29ffd.png" alt="80ac96d905d2495886e6daffac29ffd" style="zoom:50%;" />
+
+- E-R图集成方法、冲突及解决办法
+
+<img src="/img/70a47fbf301f31a8f2ffd0a02277ef9.png" alt="70a47fbf301f31a8f2ffd0a02277ef9" style="zoom:50%;" />
+
+- 例题
+
+<img src="/img/973c8291dea7cf3ce3e2ddea2f58b7a.png" alt="973c8291dea7cf3ce3e2ddea2f58b7a" style="zoom:50%;" />
+
+### 4.4 关系代数（选择题）
+
+#### 4.4.1 交、并、差
+
+<img src="/img/e49f957aca5e805939f3f44b748268e.png" alt="e49f957aca5e805939f3f44b748268e" style="zoom:50%;" />
+
+- 交：选择相同部分
+- 并：合并之后去除重复部分
+- 差：去除相同部分
+
+#### 4.4.2 笛卡尔积
+
+<img src="/img/e2ea13fcce3444e2d4c8decbffd437d.png" alt="e2ea13fcce3444e2d4c8decbffd437d" style="zoom:50%;" />
+
+#### 4.4.3 投影、选择
+
+<img src="/img/fa8291cb176cbc5b1499e8e1cf5e0e7.png" alt="fa8291cb176cbc5b1499e8e1cf5e0e7" style="zoom:50%;" />
+
+- 投影：列出特定列
+- 选择：列出特定行
+- 注：这里可用数值代表投影或选择第几个字段
+
+#### 4.4.4 联接
+
+<img src="/img/75604504db54bcbad7f81c716403e10.png" alt="75604504db54bcbad7f81c716403e10" style="zoom:50%;" />
+
+- 与笛卡尔积不同之处：相同的字段只会保留一个，且需要指明连接条件，若没有指明连接条件且只有一个相同的字段，则默认选择该字段作为条件进行连接。
+
+### 4.5 规范化理论
+
+#### 4.5.1 函数依赖
+
+<img src="/img/b178f8db124bb25edfafdbb49205301.png" alt="b178f8db124bb25edfafdbb49205301" style="zoom:50%;" />
+
+#### 4.5.2 价值与用途
+
+<img src="/img/8421a99eb1782f45552b9f9df4ceb2a.png" alt="8421a99eb1782f45552b9f9df4ceb2a" style="zoom:50%;" />
+
+#### 4.5.3 键
+
+- 概念
+
+<img src="/img/a8558a943ad8a64f90bea65f8c0f923.png" alt="a8558a943ad8a64f90bea65f8c0f923" style="zoom:50%;" />
+
+注：超键和候选键的区别：超键存在多余属性
+
+- 求候选键
+
+<img src="/img/805cae2eb4c2e1211dffa25741ca0e8.png" alt="805cae2eb4c2e1211dffa25741ca0e8" style="zoom:50%;" />
+
+- 例题<img src="/img/fb1fdeffe0703ff44e18cd89d6b5849.png" alt="fb1fdeffe0703ff44e18cd89d6b5849" style="zoom:50%;" />
+
+#### 4.5.4 范式
+
+- 概念
+
+ <img src="/img/214cd9380b7a29ae9df821fd5278754.png" alt="214cd9380b7a29ae9df821fd5278754" style="zoom:50%;" />
+
+- 第一范式
+
+<img src="/img/ecd36c95aa4368d92c9f2ce34778026.png" alt="ecd36c95aa4368d92c9f2ce34778026" style="zoom:50%;" />
+
+- 第二范式
+
+<img src="/img/eb3ff4e052d3b722d66d7bef7e70f8d.png" alt="eb3ff4e052d3b722d66d7bef7e70f8d" style="zoom:50%;" />
+
+- 第三范式
+
+<img src="/img/f6afe23e3ad403e66a8184dd4272e57.png" alt="f6afe23e3ad403e66a8184dd4272e57" style="zoom:50%;" />
+
+- BC范式
+
+<img src="/img/e89a59a90968afc84a4cc4e5c9d7f4c.png" alt="e89a59a90968afc84a4cc4e5c9d7f4c" style="zoom:50%;" />
+
+注：满足BC范式的函数依赖的左边部分都是候选码（上图T->J不符合条件，因为T不是候选码，候选码有ST、SJ）。
+
+- 例题
+
+<img src="/img/b840e3d6ce75e026cb0947636c16558.png" alt="b840e3d6ce75e026cb0947636c16558" style="zoom:50%;" />
+
+#### 4.5.5 模式分解
+
+- 保持函数依赖分解
+
+<img src="img/image-20220512204618873.png" alt="image-20220512204618873" style="zoom:50%;" />
+
+注：分解之后的R1、R2...Rn包含原来的R的所有函数依赖。
+
+- 无损分解
+
+<img src="img/image-20220512204812763.png" alt="image-20220512204812763" style="zoom:50%;" />
+
+- 判别无损分解的方法
+
+1. 列表法
+
+<img src="img/image-20220512204930862.png" alt="image-20220512204930862" style="zoom:50%;" />
+
+<img src="img/image-20220512205117708.png" alt="image-20220512205117708" style="zoom:50%;" />
+
+注：红色表示分解之后的各关系中的属性，若能通过其他关系补全则说明为无损分解。
+
+2. 集合推导
+
+<img src="img/image-20220512205509137.png" alt="image-20220512205509137" style="zoom:50%;" />
+
+注：该方法只适合两个属性分解的情景，根据条件推导出R1->R2和R2->R1，若有其中一个属于函数依赖中的一项，则为无损分解。
+
+### 4.6 并发控制
+
+- 概念
+
+<img src="img/image-20220512210433139.png" alt="image-20220512210433139" style="zoom:50%;" />
+
+- 存在的问题
+
+<img src="img/image-20220512210500646.png" alt="image-20220512210500646" style="zoom:50%;" />
+
+- 封锁协议
+
+<img src="img/image-20220512210523453.png" alt="image-20220512210523453" style="zoom:50%;" />
+
+### 4.7 完整性约束
+
+<img src="img/image-20220512211546003.png" alt="image-20220512211546003" style="zoom:50%;" />
+
+### 4.8 数据库安全
+
+<img src="img/image-20220512211716620.png" alt="image-20220512211716620" style="zoom:50%;" />
+
+### 4.9 数据备份
+
+<img src="img/image-20220512212702617.png" alt="image-20220512212702617" style="zoom:50%;" />
+
+<img src="img/image-20220512212721046.png" alt="image-20220512212721046" style="zoom:50%;" />
+
+注：差量备份是相对于完全备份。
+
+### 4.10 数据库故障与恢复
+
+<img src="img/image-20220512212825253.png" alt="image-20220512212825253" style="zoom:50%;" />
+
+### 4.11 数据仓库与数据挖掘
+
+<img src="img/image-20220512212919931.png" alt="image-20220512212919931" style="zoom:50%;" />
+
+<img src="img/image-20220512213557488.png" alt="image-20220512213557488" style="zoom:50%;" />
+
+### 4.12 反规范化
+
+<img src="img/image-20220512214031393.png" alt="image-20220512214031393" style="zoom:50%;" />
+
+### 4.13 大数据
+
+<img src="img/image-20220512214336275.png" alt="image-20220512214336275" style="zoom:50%;" />
