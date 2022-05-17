@@ -1,4 +1,4 @@
-1. 考试概要介绍
+## 1. 考试概要介绍
 
 - 考试形式
 
@@ -565,3 +565,170 @@
 ### 4.13 大数据
 
 <img src="img/image-20220512214336275.png" alt="image-20220512214336275" style="zoom:50%;" />
+
+## 5. 计算机网络
+
+### 5.1 七层模型
+
+- 概念
+
+<img src="img/image-20220516111515729.png" alt="image-20220516111515729" style="zoom:50%;" />
+
+- 例题
+
+<img src="img/image-20220516111620536.png" alt="image-20220516111620536" style="zoom:50%;" />
+
+注：全局广播只能在局域网中，所以在网络层及以上使用的设备都不能通过。
+
+### 5.2 网络技术标准与协议
+
+#### 5.2.1 概念
+
+<img src="img/image-20220516115116752.png" alt="image-20220516115116752" style="zoom:50%;" />
+
+- Samba、CIFS和NFS三种协议可以使用TCP和UDP实现。
+
+#### 5.2.2 DHCP协议
+
+<img src="img/image-20220516115333411.png" alt="image-20220516115333411" style="zoom:50%;" />
+
+- 当分配到**169.254.X.X**或**0.0.0.0**时说明IP分配失败，因为上述两个IP均为假IP，不能用于互联网通信。
+
+#### 5.2.3 DNS协议
+
+<img src="img/image-20220516115459218.png" alt="image-20220516115459218" style="zoom:50%;" />
+
+- 迭代查询：由目标客户机请求本地域名服务器，然后本地域名服务器分别从根域名服务器、顶级域名服务器、权限域名服务器等自顶向下查询域名对应的IP地址。
+
+<img src="img/image-20220516115731431.png" alt="image-20220516115731431" style="zoom:50%;" />
+
+- 递归查询：由目标客户机请求本地域名服务器，然后本地域名服务器请求根域名服务器，根域名服务器请求下一层的顶级域名服务器，逐步向下层查询直到查询到为止，查询之后逐层返回查询结果。
+
+- 例题
+
+<img src="img/image-20220516120103513.png" alt="image-20220516120103513" style="zoom:50%;" />
+
+#### 5.2.4 TCP协议
+
+<img src="img/image-20220516120435180.png" alt="image-20220516120435180" style="zoom:50%;" />
+
+### 5.3 网络类型与拓扑结构
+
+<img src="img/image-20220516204817432.png" alt="image-20220516204817432" style="zoom:50%;" />
+
+### 5.4 网络规划与设计
+
+<img src="img/image-20220516205441141.png" alt="image-20220516205441141" style="zoom:50%;" />
+
+#### 5.4.1 逻辑网络设计
+
+<img src="img/image-20220516205531781.png" alt="image-20220516205531781" style="zoom:50%;" />
+
+#### 5.4.2 物理网络设计
+
+<img src="img/image-20220516205613887.png" alt="image-20220516205613887" style="zoom:50%;" />
+
+#### 5.4.3 分层设计
+
+<img src="img/image-20220516205657379.png" alt="image-20220516205657379" style="zoom:50%;" />
+
+### 5.5 IP地址与子网划分
+
+#### 5.5.1 IP地址分类
+
+<img src="img/image-20220517133424645.png" alt="image-20220517133424645" style="zoom:50%;" />
+
+注：全0和全1地址一般不使用，计算地址数量时需减2。
+
+#### 5.5.2 子网划分
+
+<img src="img/image-20220517133648983.png" alt="image-20220517133648983" style="zoom:50%;" />
+
+注：子网号可以使用全0和全1。
+
+- 例题
+
+<img src="img/image-20220517134052691.png" alt="image-20220517134052691" style="zoom:50%;" />
+
+#### 5.5.3 无分类编址（无类域间路由）
+
+<img src="img/image-20220517133857859.png" alt="image-20220517133857859" style="zoom:50%;" />
+
+- 例题
+
+<img src="img/image-20220517134125525.png" alt="image-20220517134125525" style="zoom:50%;" />
+
+#### 5.5.4 特殊含义的IP地址
+
+<img src="img/image-20220517134802173.png" alt="image-20220517134802173" style="zoom:50%;" />
+
+### 5.6 HTML
+
+<img src="img/image-20220517135113771.png" alt="image-20220517135113771" style="zoom:50%;" />
+
+### 5.7 无线网
+
+<img src="img/image-20220517135518403.png" alt="image-20220517135518403" style="zoom:50%;" />
+
+### 5.8 网络接入技术
+
+<img src="img/image-20220517140217618.png" alt="image-20220517140217618" style="zoom:50%;" />
+
+- TDD为时分复用技术（基于TD-SCDMA），FDD为频分复用技术（基于WCDMA）。
+
+### 5.9 IPv6
+
+<img src="img/image-20220517141149131.png" alt="image-20220517141149131" style="zoom:50%;" />
+
+## 6. 系统安全分析与设计
+
+### 6.1 信息系统安全属性
+
+<img src="img/image-20220517141605524.png" alt="image-20220517141605524" style="zoom:50%;" />
+
+### 6.2 对称加密与非对称加密
+
+- 对称加密技术
+
+<img src="img/image-20220517142744951.png" alt="image-20220517142744951" style="zoom:50%;" />
+
+- 非对称加密技术
+
+<img src="img/image-20220517142714769.png" alt="image-20220517142714769" style="zoom:50%;" />
+
+### 6.3 信息摘要
+
+<img src="img/image-20220517143230893.png" alt="image-20220517143230893" style="zoom:50%;" />
+
+### 6.4 数字签名
+
+<img src="img/image-20220517172441918.png" alt="image-20220517172441918" style="zoom:50%;" />
+
+### 6.5 数字信封与PGP
+
+<img src="img/image-20220517173413737.png" alt="image-20220517173413737" style="zoom:50%;" />
+
+- 练习题
+
+<img src="img/image-20220517174633238.png" alt="image-20220517174633238" style="zoom:50%;" />
+
+### 6.6 网络安全
+
+#### 6.6.1 各个网络层次的安全保障
+
+<img src="img/image-20220517174903684.png" alt="image-20220517174903684" style="zoom:50%;" />
+
+注意：SSL适用于多个网络层级。
+
+#### 6.6.2 网络威胁与攻击
+
+<img src="img/image-20220517175400866.png" alt="image-20220517175400866" style="zoom:50%;" />
+
+<img src="img/image-20220517175704554.png" alt="image-20220517175704554" style="zoom:50%;" />
+
+#### 6.6.3 防火墙
+
+<img src="img/image-20220517175811498.png" alt="image-20220517175811498" style="zoom:50%;" />
+
+## 7. 数据结构与算法
+
