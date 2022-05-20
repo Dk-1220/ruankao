@@ -1001,3 +1001,58 @@
 #### 7.10.10 排序算法的时间和空间复杂度
 
 <img src="img/image-20220520104129046.png" alt="image-20220520104129046" style="zoom:50%;" />
+
+## 8. 程序设计语言与语言处理程序
+
+### 8.1 编译与解释
+
+- 编译过程
+
+<img src="img/image-20220520105848737.png" alt="image-20220520105848737" style="zoom:50%;" />
+
+### 8.2 文法
+
+- 定义
+
+<img src="img/image-20220520110327356.png" alt="image-20220520110327356" style="zoom:50%;" />
+
+<img src="img/image-20220520110404570.png" alt="image-20220520110404570" style="zoom:50%;" />
+
+- 语法推导树
+
+<img src="img/image-20220520110516237.png" alt="image-20220520110516237" style="zoom:50%;" />
+
+### 8.3 正规式（必考）
+
+<img src="img/image-20220520112125399.png" alt="image-20220520112125399" style="zoom:50%;" />
+
+- 例题
+
+<img src="img/image-20220520112155194.png" alt="image-20220520112155194" style="zoom:50%;" />
+
+<img src="img/image-20220520112227642.png" alt="image-20220520112227642" style="zoom:50%;" />
+
+### 8.4 有限自动机
+
+<img src="img/image-20220520111212995.png" alt="image-20220520111212995" style="zoom:50%;" />
+
+- 例题
+
+<img src="img/image-20220520113004055.png" alt="image-20220520113004055" style="zoom:50%;" />
+
+### 8.5 表达式（必考）
+
+<img src="img/image-20220520113305892.png" alt="image-20220520113305892" style="zoom:50%;" />
+
+注意：括号不能构造到树中，只表达计算的优先级顺序。
+
+### 8.6 传值与传址（必考）
+
+<img src="img/image-20220520113847899.png" alt="image-20220520113847899" style="zoom:50%;" />
+
+### 8.7 各种程序语言特点
+
+<img src="img/image-20220520113915079.png" alt="image-20220520113915079" style="zoom:50%;" />
+
+## 9. 法律法规知识
+
